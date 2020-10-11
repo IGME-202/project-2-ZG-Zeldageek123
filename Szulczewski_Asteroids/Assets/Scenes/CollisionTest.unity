@@ -202,8 +202,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1210163951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6438044076667543718, guid: 5b8201cfed460c14b8126826c37064b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1860135798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1491760417
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1491760419
 MonoBehaviour:
@@ -250,17 +256,35 @@ MonoBehaviour:
   cameraObject: {fileID: 519420031}
   totalCamHeight: 0
   totalCamWidth: 0
-  checktype: 0
-  spaceShip: {fileID: 1807701021}
-  asteroid: {fileID: 7367596656385044470, guid: a3872442f8ffc9343b1a8961b0425d96,
+  bullet: {fileID: 8951562702593152879, guid: 141e4cb3cafca4646b56a12d0a612872, type: 3}
+  checktype: 1
+  spaceShip: {fileID: 1210163951}
+  redAsteroid: {fileID: 1932118487333024515, guid: 1cc844df916b1b041b218196d7e16434,
     type: 3}
-  asteroidArray: []
---- !u!1 &1807701021 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6782668622279844968, guid: 5b8201cfed460c14b8126826c37064b9,
+  redSmall1: {fileID: 4127757301128333837, guid: a7dae24ec830a594785c9a4a2856e2ea,
     type: 3}
-  m_PrefabInstance: {fileID: 1860135798}
-  m_PrefabAsset: {fileID: 0}
+  redSmall2: {fileID: 4846421276999004442, guid: aa5482ab25eaee9499d7a065b603dc95,
+    type: 3}
+  blueAsteroid: {fileID: 6318321204431129286, guid: 05bf8514f0898ce41be6ef65d64f93d8,
+    type: 3}
+  blueSmall1: {fileID: 2267151139846670695, guid: cdc12a72cc827b4489d49113cc9a8765,
+    type: 3}
+  blueSmall2: {fileID: 5605603252645655195, guid: 5a4d8d017e218c74aa2a34887cd89420,
+    type: 3}
+  greenAsteroid: {fileID: 4309233301798580438, guid: bd70c41fe0afac94fbd6cf6f7cd6dca8,
+    type: 3}
+  greenSmall1: {fileID: 1862248818406498747, guid: 4fbf76a5b34918e468c493e5b03c2dc4,
+    type: 3}
+  greenSmall2: {fileID: 7999063446722976224, guid: ceab9bee5c76d0f4290d9b1176386e37,
+    type: 3}
+  yellowAsteroid: {fileID: 4482277071265241982, guid: 21c7d8e976955594b839e68a97912e63,
+    type: 3}
+  yellowSmall1: {fileID: 6919117135034288546, guid: 1053f5451b177014595bf6d1aa27c5d4,
+    type: 3}
+  yellowSmall2: {fileID: 6824430488455644230, guid: 70cbf9119c0a00645a3dae179a109f43,
+    type: 3}
+  asteroids: []
+  smallAsteroids: []
 --- !u!1001 &1860135798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -268,6 +292,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7189738150446630368, guid: 5b8201cfed460c14b8126826c37064b9,
+        type: 3}
+      propertyPath: cameraObject
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: -7189738150446630368, guid: 5b8201cfed460c14b8126826c37064b9,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 8951562702593152879, guid: 141e4cb3cafca4646b56a12d0a612872,
+        type: 3}
+    - target: {fileID: 3516321568988652888, guid: 5b8201cfed460c14b8126826c37064b9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516321568988652888, guid: 5b8201cfed460c14b8126826c37064b9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516321568988652888, guid: 5b8201cfed460c14b8126826c37064b9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516321568988652888, guid: 5b8201cfed460c14b8126826c37064b9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6782668622279844968, guid: 5b8201cfed460c14b8126826c37064b9,
         type: 3}
       propertyPath: m_Name

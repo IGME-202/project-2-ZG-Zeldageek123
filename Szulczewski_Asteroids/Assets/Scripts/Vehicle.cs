@@ -14,9 +14,11 @@ public class Vehicle : MonoBehaviour
 
     //Vehicle fields
     [SerializeField]
-    Vector3 vehiclePosition = Vector3.zero;
+    //This needs to be public so that the bullet's can be instantiated at this position
+    public Vector3 vehiclePosition = Vector3.zero;
+    //Same as above reasoning
     [SerializeField]
-    Vector3 direction = Vector3.right;
+    public Vector3 direction = Vector3.right;
     [SerializeField]
     Vector3 velocity = Vector3.zero;
 
@@ -92,7 +94,6 @@ public class Vehicle : MonoBehaviour
         //Set rotation to match the direction
         transform.rotation = Quaternion.LookRotation(Vector3.forward, direction);
 
-
         // Check if not on viewport
         // Note - width / height must be divided by two because origin is centered.
         if (vehiclePosition.x < ((-totalCamWidth / 2)))
@@ -111,6 +112,5 @@ public class Vehicle : MonoBehaviour
         {
             vehiclePosition = new Vector3(vehiclePosition.x, (-totalCamHeight / 2), 0);
         }
-
     }
 }
